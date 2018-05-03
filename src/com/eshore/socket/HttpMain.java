@@ -33,7 +33,7 @@ public class HttpMain {
 	
 	
 	public static void httpServer() throws IOException{
-		ServerSocket ss = new ServerSocket(8080);
+		ServerSocket ss = new ServerSocket(8888);
 		while(true){
 			Socket s = ss.accept();
 			BufferedReader reader = new BufferedReader( new InputStreamReader( s.getInputStream() ) );
