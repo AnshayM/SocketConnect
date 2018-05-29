@@ -15,7 +15,8 @@ import java.net.URLConnection;
 public class HttpMain {
 
 	public static void main(String[] args) throws IOException{
-		URL url = new URL("http://localhost:8080/test/testHttp");
+		URL url = new URL("http://localhost:8888/test/testHttp");
+//		URL url = new URL("http://www.baidu.com");
 		URLConnection connection = url.openConnection();
 		connection.setDoOutput(true);
 		connection.connect();
